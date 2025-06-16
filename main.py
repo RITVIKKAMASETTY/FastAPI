@@ -9,7 +9,6 @@ class Book:
     author:str
     description:str
     rating:int
-
     def __init__(self,id,title,author,description,rating):
         self.id=id
         self.title=title
@@ -26,8 +25,8 @@ class BookRequest(BaseModel):
         "json_schema_extra":{
             "examples":[
                 {
-                    "title":"book1",
-                    "author":"author1",
+                    "title":"book",
+                    "author":"author",
                     "description":"description1",
                     "rating":5
                 }
